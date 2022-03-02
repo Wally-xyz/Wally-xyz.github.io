@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "UntitledSansWeb";
+    src: url('https://d3nzzq2dyno8f6.cloudfront.net/UntitledSansWeb-Regular.woff2') format('woff2'),
+         url('https://d3nzzq2dyno8f6.cloudfront.net/UntitledSansWeb-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face{
+    font-family:'Heldane Display';
+    font-weight:400;
+    src: url(https://d84m7xss6emf0.cloudfront.net/assets/web/N2MwNTgyNjUxYTk3/27b4dbdd3abbf233a89d3abe82c04beb.woff2) format("woff2"),url(https://d84m7xss6emf0.cloudfront.net/assets/web/N2MwNTgyNjUxYTk3/55ec6d4b40afa54c0472d8265b5312f6.woff) format("woff")
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+  }
+  
+  .content {
+      z-index: 3;
+  }
+
+  html {
+    min-height: 100%;
+    height: 100%;
+    
+    background: #F8F9FA;
+     
+    font-size: 16px;
+    line-height: 1;
+    font-family: "UntitledSansWeb", -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Oxygen, Ubuntu, Cantarell, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    color: #000;
+    
+    overflow: hidden;
+  }
+  
+  body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    
+    overflow: hidden;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Heldane Display', serif; 
+  }
+  
+   .title {
+      font-size: 5rem; 
+      line-height: 0.75;
+      margin-bottom: 0.25em;
+     
+  /*     max-width: 12ch; */
+      color: #000;
+    }
+  
+    .subtitle {
+      font-size: 16px; 
+      line-height: 1.333;
+      
+      max-width: 40rem;
+      margin-bottom: 1em;
+      position: absolute;
+      bottom: 0px;
+      color: black;
+      text-decoration: none;
+    }
+  
+  main {
+    display: grid;
+    align-content: center;
+    
+    gap: 1rem;
+    
+    width: 100%;
+    max-width: 48rem;
+    height: 100%;
+    
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    
+    position: relative;
+    place-items: center;
+    text-align: center;
+    
+    z-index: 2;
+  }
+  
+  .bg-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bg-wrapper:after {
+     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(80px);
+    pointer-events: none; 
+    
+    z-index: 1;
+  }
+  
+  .bg-gradient {
+    display: block;
+    width: 100vw;
+    min-width: 550px;
+    max-width:  1600px;
+    height: 100vh;
+    object-fit: contain;
+    
+    overflow: visible;
+    
+    position: absolute;
+    left: -20%;
+    top: -48%;
+    
+    opacity: 1;
+  
+    transform:  scale(1.5,1.5) ;
+    transform-origin: center center;
+  /*   filter: blur(60px); */
+    
+    
+    backface-visibility: hidden;
+    perspective: 1000;
+    
+  
+    pointer-events: none;
+      
+    z-index: 1;
+    
+  }
+  
+  /* .bg-gradient::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(60px);
+    pointer-events: none; 
+    
+    opacity: 0.9;
+  } */
+  
+  @keyframes bg-animate {
+    from {
+      transform: translate(-3%, -100px) scale(0.9);
+    }
+    
+    to {
+      transform:  translate(0, 0) scale(1);
+    }
+  }
