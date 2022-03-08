@@ -194,6 +194,7 @@
   }
 
   .join {
+    backdrop-filter: blur(100px);
     padding: 32px;
     z-index: 3;
     position: relative;
