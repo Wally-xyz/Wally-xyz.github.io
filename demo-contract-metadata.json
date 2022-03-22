@@ -1,0 +1,8 @@
+{
+  "name": "Wally",
+  "description": "The easiest way to set your twitter profile picture as an NFT, all without needing to own crypto or secure a private key. Try it at https://www.wallylabs.xyz",
+  "image": "https://www.wallylabs.xyz/logo.png",
+  "external_link": "https://www.wallylabs.xyz",
+  "seller_fee_basis_points": 100,
+  "fee_recipient": "0x6Bed0d6959863Bf87405a4E7A56461e2C08f52B6"
+}
